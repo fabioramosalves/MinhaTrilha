@@ -1,0 +1,1 @@
+Minha trilha de desenvolvimento pessoal e técnico.
