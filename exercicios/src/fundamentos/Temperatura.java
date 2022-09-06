@@ -17,9 +17,9 @@ public class Temperatura {
 		final int ajuste = 32;
 		final double fator = 5.0/9.0;
 		
-		double c = f - ajuste * fator;
+		double c = (f - ajuste) * fator;
 		
-		System.out.printf("Temperatura %.2f%n", c);
+		System.out.printf("Temperatura %.2f°C %n", c);
 		
 		scanner.close();
 	}
