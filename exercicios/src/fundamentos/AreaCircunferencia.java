@@ -8,7 +8,8 @@ public class AreaCircunferencia {
 
 		Locale.setDefault(Locale.US);
 		double raio = 3.5;
-		double area =  Math.PI * Math.pow(raio, 2);
+		final double PI = 3.14159;
+		double area =  PI * Math.pow(raio, 2);
 		
 		System.out.printf("Área circulo: %.2f%n", area);
 	}
