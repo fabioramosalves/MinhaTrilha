@@ -10,7 +10,11 @@ public class Inferencia {
 		var b = 4.5;
 
 		var c = "Texto";
+		
+		double d;//declaração
+		
+		d = 123.65;//inicialização
 
-		System.out.println(a + " " + b + " " + c);
+		System.out.println(a + " " + b + " " + c + " " + d); //utilização
 	}
 }
