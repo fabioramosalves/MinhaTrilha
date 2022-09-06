@@ -14,10 +14,13 @@ public class Temperatura {
 		
 		f = scanner.nextDouble();
 		
-		double c = f - 32 * 5/9;
+		final int ajuste = 32;
+		final double fator = 5.0/9.0;
+		
+		double c = f - ajuste * fator;
 		
 		System.out.printf("Temperatura %.2f%n", c);
 		
-		scanner.close();	
+		scanner.close();
 	}
 }
