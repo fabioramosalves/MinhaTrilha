@@ -13,6 +13,5 @@ public class Import {
 		Date date = new Date();
 
 		System.out.println(date);
-
 	}
 }
