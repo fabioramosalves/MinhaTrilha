@@ -28,10 +28,9 @@ public class TiposPrimitivos {
 		System.out.println(anosDeEmpresa * 365);
 		System.out.println(numeroDeVoos / 2 );
 		System.out.println(pontosAcumulados / vendasAcumuladas);
-		System.out.println(id + ": ganha ->" + salario);
+		System.out.println(id + ": ganha -> " + salario);
 		System.out.println("Férias: " + estaDeFerias);
 		System.out.println("Status " + status);
-		System.out.println("unicode " + unicode );
-		
+		System.out.println("unicode " + unicode );	
 	}
 }
