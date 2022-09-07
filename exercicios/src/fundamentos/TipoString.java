@@ -42,5 +42,11 @@ public class TipoString {
 		String formatedText = String.format("Nome: %s %s Salário: R$ %.2f%n", nome, sobreNome, salario);
 
 		System.out.println(formatedText);
+		
+		System.out.println("qualquer frase".contains("rase")); //true
+		System.out.println("qualquer frase".indexOf("rase")); //10
+		System.out.println("qualquer frase".substring(6)); //er frase
+		System.out.println("qualquer frase".substring(6, 7)); //e
+		System.out.println("qualquer frase".substring(6, 8)); //er
 	}
 }
