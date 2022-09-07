@@ -20,8 +20,13 @@ public class NotacaoPonto {
 				.toUpperCase()
 				.concat(" !!!");
 		
-		System.out.println(y);
+		System.out.println(y);	
 		
 		
+		//tipos primitivos não tem o operador ponto
+		
+		int integerNumber = 3;
+	
+		//integerNumber. não tem ponto.
 	}
 }
