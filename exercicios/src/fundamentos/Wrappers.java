@@ -35,6 +35,5 @@ public class Wrappers {
 
 		Character c = '#';
 		System.out.println(c.toString());
-
 	}
 }
