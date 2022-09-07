@@ -20,7 +20,7 @@ public class Wrappers {
 		Float f = 123.10f;
 
 		System.out.println(f.toString());
-		
+
 		Double d = 123456.10d;
 
 		System.out.println(d.toString());
@@ -35,5 +35,6 @@ public class Wrappers {
 
 		Character c = '#';
 		System.out.println(c.toString());
+
 	}
 }

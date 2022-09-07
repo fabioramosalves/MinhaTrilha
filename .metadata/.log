@@ -19,7 +19,7 @@ Binding(CTRL+SHIFT+T,
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5f6ba085,
@@ -590,4 +590,4 @@ java.net.SocketException: Connection reset
 	at org.jacoco.core.data.ExecutionDataReader.read(ExecutionDataReader.java:84)
 	at org.eclipse.eclemma.internal.core.MemoryExecutionDataSource.readFrom(MemoryExecutionDataSource.java:69)
 	at org.eclipse.eclemma.internal.core.launching.AgentServer.run(AgentServer.java:115)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
