@@ -24,6 +24,5 @@ public class ConversaoTiposPrimitivosNumerico {
 		double e = 1.99999;
 		int ff = (int) e;
 		System.out.println(ff); // perderá informação
-
 	}
 }
