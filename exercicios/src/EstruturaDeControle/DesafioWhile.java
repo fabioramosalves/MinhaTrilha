@@ -8,19 +8,19 @@ public class DesafioWhile {
 		Scanner scanner = new Scanner(System.in);
 
 		int contador = 0, total = 0, nota = 0;
-		
+
 		while (nota != -1) {
-			
-			System.out.println("Digite uma nota: ");
+
+			System.out.println("Digite uma nota (ou -1 p/ sair): ");
 			nota = scanner.nextInt();
-			
+
 			if (nota >= 0 && nota <= 10) {
 
 				total += nota;
 				contador++;
-			} else {
+			} else if (nota != -1) {
 				System.out.println("Nota inválida!!!");
-			}		
+			}
 		}
 
 		System.out.printf("total = %d média = %d ", total, total / contador);
