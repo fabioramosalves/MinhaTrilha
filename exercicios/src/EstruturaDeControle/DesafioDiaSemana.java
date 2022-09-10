@@ -21,15 +21,15 @@ public class DesafioDiaSemana {
 		} else if (diaSemana.equalsIgnoreCase("segunda")) {
 			dia = 2;
 		} else if (diaSemana.equalsIgnoreCase("terça")) {
-			dia = 2;
+			dia = 3;
 		} else if (diaSemana.equalsIgnoreCase("quarta")) {
-			dia = 2;
+			dia = 4;
 		} else if (diaSemana.equalsIgnoreCase("quinta")) {
-			dia = 2;
+			dia = 5;
 		} else if (diaSemana.equalsIgnoreCase("sexta")) {
-			dia = 2;
+			dia = 6;
 		} else if (diaSemana.equalsIgnoreCase("sábado")) {
-			dia = 2;
+			dia = 7;
 		} else {
 			dia = 0;
 			diaSemana = "Inválido";
