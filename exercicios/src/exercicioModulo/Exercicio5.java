@@ -2,12 +2,11 @@ package exercicioModulo;
 
 import java.util.Scanner;
 
-public class Exercicio4 {
-
+public class Exercicio5 {
 	public static void main(String[] args) {
-		
+
 		/*
-		 * 4. Criar um programa que receba um número e diga se ele é um número primo.
+		 *5. Refatorar o exercício 04, utilizando a estrutura switch.
 		 */
 		
 		Scanner scanner = new Scanner(System.in);
@@ -27,13 +26,14 @@ public class Exercicio4 {
 			}
 		}
 		
-		if(contador == 0) {
+		switch(contador) {
+		case 0:
 			System.out.printf("%d %s", numero, "é primo");
-		}else {
-			
+			break;
+		default:
 			System.out.printf("%d %s", numero, "não é primo");
 		}
-
+		
 		scanner.close();
 	}
 }
