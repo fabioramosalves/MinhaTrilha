@@ -14,7 +14,7 @@ public class DataTeste {
 		data2.mes = 07;
 		data2.ano = 2022;
 				
-		System.out.printf("%s/%s/%d\n", data1.dia, data1.mes, data1.ano );	
-		System.out.printf("%s/%s/%d\n", data2.dia, data2.mes, data2.ano );
+		data1.imprimirDataFormatada();
+		data2.imprimirDataFormatada();
 	}
 }
