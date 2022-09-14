@@ -1,0 +1,23 @@
+package exercicioModulo;
+
+import java.util.Scanner;
+
+public class Primeiro {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		int valor = scanner.nextInt();
+		
+		if(valor >= 0 && valor <= 10) {
+			String resultado = valor % 2 == 0 ? "Sim": "não";
+			System.out.printf("É %d válido é par: ", valor, resultado);
+		}
+		else {
+			System.out.printf("É não válido: ", valor);
+		}
+		
+		scanner.close();
+	}
+}

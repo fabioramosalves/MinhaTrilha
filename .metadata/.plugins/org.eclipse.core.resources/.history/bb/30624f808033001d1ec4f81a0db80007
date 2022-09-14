@@ -1,0 +1,19 @@
+package exercicioModulo;
+
+import java.util.Scanner;
+
+public class Exercicio9 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		
+		for (int i = 0; i <= 10; i++) {
+		
+			int numero = scanner.nextInt();
+		
+		}
+		
+		scanner.close();
+	}
+}

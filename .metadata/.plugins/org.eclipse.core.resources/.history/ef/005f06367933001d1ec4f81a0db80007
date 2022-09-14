@@ -1,0 +1,43 @@
+package exercicioModulo;
+
+import java.util.Scanner;
+
+public class Exercicio6 {
+	public static void main(String[] args) {
+
+		/*
+		 * 6. Jogo da adivinhação: Tentar adivinhar um número entre 0 - 100. Armazene um
+		 * numero aleatório em uma variável. O Jogador tem 10 tentativas para adivinhar
+		 * o número gerado. Ao final de cada tentativa, imprima a quantidade de
+		 * tentativas restantes, e imprima se o número inserido é maior ou menor do que
+		 * o número armazenado.
+		 */
+
+		Scanner scanner = new Scanner(System.in);
+
+		
+		System.out.println("Informe um valor de 0 a 100 para adivinhar ");
+		int valor = scanner.nextInt();
+		int tentativa;
+		
+		
+		for(int i = 0; i <= 10; i++) {
+			
+			
+			tentativa = scanner.nextInt();
+			if(tentativa == valor){
+				System.out.println("Acertou!");
+				break;
+			}
+			else if(tentativa < valor) {
+				System.out.printf("Tentativa %d valor é nenor", i);
+			}
+			else 
+				System.out.printf("Tentativa %d valor é maior", i);
+		}
+		
+		
+		
+		scanner.close();
+	}
+}

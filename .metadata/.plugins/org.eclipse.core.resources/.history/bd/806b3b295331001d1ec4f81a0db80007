@@ -1,0 +1,28 @@
+package EstruturaDeControle;
+
+import java.util.Scanner;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		
+		//if(....) sentença; ou {}
+		//While(...) sentença; ou {}
+		//for(...; ...; ...) sentença; ou {}
+		
+		// do sentença; {} while(...);
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		
+	   do {
+		
+	} while (condition);	
+	   
+	   
+	   
+	   scanner.close();
+	}
+}

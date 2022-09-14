@@ -1,0 +1,26 @@
+package fundamentos.operadores;
+
+import javax.swing.JOptionPane;
+
+public class DesafioCalculadora {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Ler num1
+		// Ler num2
+		// + - * / %
+
+		double num1 = Double.parseDouble(JOptionPane.showInputDialog("Informe o primeiro número").trim());
+		double num2 = Double.parseDouble(JOptionPane.showInputDialog("Informe o segundo número").trim());
+		String operacao = JOptionPane.showInputDialog("Informe o primeiro número").trim();
+
+		double result = operacao.equals("+") ? num1 + num2
+				: operacao.equals("-") ? num1 - num2
+						: operacao.equals("*") ? num1 * num2
+								: operacao.equals("/") ? num1 / num2 
+										: operacao.equals("%") ? num1 % num2 : 0.0d;
+
+		JOptionPane.showConfirmDialog(null, String.format("%.2f %s %.2f = %.2f", num1,operacao,num2,result));
+	}
+}

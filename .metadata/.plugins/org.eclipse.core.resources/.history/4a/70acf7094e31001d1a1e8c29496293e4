@@ -1,0 +1,23 @@
+package EstruturaDeControle;
+
+import java.util.Scanner;
+
+public class While2 {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite algo: ");
+		String entrada = scanner.next().trim();
+
+		while (!entrada.equalsIgnoreCase("sair")) {
+
+			System.out.println("Digite algo: ");
+			String entrada = scanner.next().trim();
+		}
+
+		scanner.close();
+	}
+
+}

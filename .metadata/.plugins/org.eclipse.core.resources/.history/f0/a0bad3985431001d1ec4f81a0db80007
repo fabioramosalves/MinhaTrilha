@@ -1,0 +1,22 @@
+package EstruturaDeControle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+	
+		int nota;
+
+		nota = scanner.nextInt();
+		
+		while (nota != -1) {
+
+			
+		}
+		
+		scanner.close();
+	}
+}

@@ -1,0 +1,23 @@
+package fundamentos.exerciciosModulo;
+
+import java.util.Scanner;
+
+public class IMC {
+	public static void main(String[] args) {
+		
+		
+		double IMC, peso, altura;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite o peso: ");
+		peso = scanner.nextDouble();
+		
+		System.out.println("Digite o altura: ");
+		altura = scanner.nextDouble();
+		
+		scanner.close();
+		
+
+	}
+}

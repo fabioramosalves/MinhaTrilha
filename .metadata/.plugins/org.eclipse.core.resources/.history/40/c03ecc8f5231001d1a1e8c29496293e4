@@ -1,0 +1,16 @@
+package EstruturaDeControle;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		
+		//if(....) sentença; ou {}
+		//While(...) sentença; ou {}
+		//for(...; ...; ...) sentença; ou {}
+		
+		// do sentença; {} while(...);
+		
+	   
+		
+	}
+}

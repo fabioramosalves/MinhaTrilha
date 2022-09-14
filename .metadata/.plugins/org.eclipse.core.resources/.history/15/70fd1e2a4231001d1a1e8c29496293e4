@@ -1,0 +1,25 @@
+package EstruturaDeControle;
+
+import java.util.Scanner;
+
+public class If {
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Informe a média: ");
+		double media = scanner.nextDouble();
+		String resultado;
+		
+		
+		if(media >= 7) {
+		
+		}
+		else if(media <= 5) {
+			
+		}
+		
+		
+		scanner.close();
+	}
+}
