@@ -1,4 +1,4 @@
-package exercicioModulo;
+package estruturaDeControle.exercicioModulo;
 
 import java.util.Random;
 import java.util.Scanner;

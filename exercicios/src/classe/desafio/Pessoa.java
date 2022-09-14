@@ -1,4 +1,4 @@
-package classe;
+package classe.desafio;
 
 public class Pessoa {
 
@@ -13,5 +13,9 @@ public class Pessoa {
 	void comer(Comida comida) {
 		if (comida != null)
 			this.peso += comida.peso;
+	}
+	
+	String apresentar() {
+		return String.format("%s %.4f Kgs\n", this.nome, this.peso );
 	}
 }
