@@ -11,6 +11,6 @@ public class ValorNulo {
 
 		//objetos nulos devem ser tratados para evitar erro de java.lang.NullPointerException
 		if (s2 != null)
-			System.out.println(s2.concat(" ?????")); // java.lang.NullPointerException
+			System.out.println(s2.concat(" ?????")); // java.lang.NullPointerException 
 	}
 }
