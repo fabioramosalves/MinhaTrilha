@@ -7,7 +7,7 @@ public class ValorNulo {
 		String s1 = "";
 		System.out.println(s1.concat("!!!!"));
 
-		String s2 = Math.random() > 0.5 ? "valor" : null; //random para simular erro;
+		String s2 = Math.random() > 0.5 ? "valor" : null; //random para simular erro; 
 
 		//objetos nulos devem ser tratados para evitar erro de java.lang.NullPointerException 
 		if (s2 != null)
