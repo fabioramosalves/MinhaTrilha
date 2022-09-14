@@ -7,9 +7,10 @@ public class Data {
 	int ano;
 
 	Data() {
-		dia = 1;
-		mes = 1;
-		ano = 1970;
+		// dia = 1;
+		// mes = 1;
+		// ano = 1970;
+		this(1, 1, 1970); //this chamando a partir um construtor 
 	}
 
 	Data(int dia, int mes, int ano) {
