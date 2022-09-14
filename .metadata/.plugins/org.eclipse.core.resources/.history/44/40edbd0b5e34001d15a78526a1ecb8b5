@@ -1,7 +1,5 @@
 package classe;
 
-import java.lang.Character.UnicodeBlock;
-
 public class DataTeste {
 	
 	char teste;
@@ -25,7 +23,7 @@ public class DataTeste {
 		
 		//uma variável local não será inicializada, apenas
 		//variáveis de instancia recebem um valor padrão
-				
+		
 		System.out.println(new DataTeste().teste);
 	}
 }

@@ -1,11 +1,6 @@
 package classe;
 
-import java.lang.Character.UnicodeBlock;
-
 public class DataTeste {
-	
-	char teste;
-	
 	public static void main(String[] args) {
 
 		Data data1 = new Data();
@@ -21,11 +16,9 @@ public class DataTeste {
 		data1.imprimirDataFormatada();
 		data2.imprimirDataFormatada();
 		data3.imprimirDataFormatada();
+		char teste;
 		
-		
-		//uma variável local não será inicializada, apenas
-		//variáveis de instancia recebem um valor padrão
-				
-		System.out.println(new DataTeste().teste);
+		teste = "A";
+		System.out.println(teste);
 	}
 }
