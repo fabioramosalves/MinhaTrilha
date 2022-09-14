@@ -30,7 +30,7 @@ public class Exercicio {
 
 		double nota = 7.55;
 		// dados literais
-		double[] notasAlunoB = { 8.05, nota , 1.28 };
+		double[] notasAlunoB = { 8.05, nota, 1.28 };
 
 		for (double d : notasAlunoB) {
 			System.out.println(d);
