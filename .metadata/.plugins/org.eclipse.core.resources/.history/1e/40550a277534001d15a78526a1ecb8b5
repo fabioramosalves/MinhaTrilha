@@ -8,6 +8,6 @@ public class ValorNulo {
 		System.out.println(s1.concat("!!!!"));
 		
 		String s2 = null;	
-		System.out.println(s2.concat("?????")); // java.lang.NullPointerException  
+		System.out.println(s2.concat("?????")); // java.lang.NullPointerException 
 	}
 }
