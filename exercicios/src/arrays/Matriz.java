@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -30,7 +31,11 @@ public class Matriz {
 			}
 		}
 
-		System.out.printf("Total: %.2f - Média %.2f", total, total / (qtdeNotas + qtdeAlunos));
+		System.out.printf("Total: %.2f - Média %.2f\n", total, total / (qtdeNotas * qtdeAlunos));
+		
+		for(double[] notasDoAluno: notasDaTurma) {
+			System.out.println(Arrays.toString(notasDoAluno));
+		}
 
 		scanner.close();
 	}
