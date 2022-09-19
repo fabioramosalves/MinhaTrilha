@@ -6,14 +6,14 @@ public class Data {
 	int mes;
 	int ano;
 
-	Data() {
+	public Data() {
 		// dia = 1;
 		// mes = 1;
 		// ano = 1970;
 		this(1, 1, 1970); //this chamando a partir um construtor 
 	}
 
-	Data(int dia, int mes, int ano) {
+	public Data(int dia, int mes, int ano) {
 		this.dia = dia;
 		this.mes = mes;
 		this.ano = ano;
