@@ -13,6 +13,10 @@ public class CarroTeste {
 
 		System.out.println(c.motor.giros());
 
+		c.portas.get(0).aberta = true;
+
+		Porta p = c.portas.get(0);
+
 		c.acelerar();
 		c.acelerar();
 		c.acelerar();
@@ -26,16 +30,20 @@ public class CarroTeste {
 		c.frear();
 		c.frear();
 		c.frear();
-		
-		//faltou encapsulamento
-		//c.motor.fatorInjecao = -30;//gerará um valor inválido
-		
+
+		System.out.println(p.codigo + " " + p.aberta);
+
+		System.out.println(c.portas.get(0).aberta);
+
 		System.out.println(c.frear());
-		
+
 		System.out.println(c.motor.giros());
-		
-		//relação bidirecional
-		
+
+		// faltou encapsulamento
+		// c.motor.fatorInjecao = -30;//gerará um valor inválido
+
+		// relação bidirecional
+
 		System.out.println(c.motor.carro.motor.carro.motor.carro.motor.giros());
 
 	}
