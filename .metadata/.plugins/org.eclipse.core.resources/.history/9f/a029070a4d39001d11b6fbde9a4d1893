@@ -1,0 +1,8 @@
+package oo.heranca;
+
+public class Jogo {
+
+	Jogador j1 = new Jogador();
+	
+	j1.y
+}

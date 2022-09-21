@@ -1,0 +1,19 @@
+package oo.composicao.desafio;
+
+public class Item {
+	Compra compra;
+	Produto produto;
+	
+	Item(Compra compra, Produto produto){
+		this.compra = compra;
+		this.produto = produto;
+	}
+	
+	Item(Compra compra){
+		this.compra = compra;
+	}
+	
+	Item(Produto produto){
+		this.produto = produto;
+	}
+}

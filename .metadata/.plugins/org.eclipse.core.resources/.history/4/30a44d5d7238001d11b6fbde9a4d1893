@@ -1,0 +1,24 @@
+package colecoes;
+
+import java.util.HashSet;
+
+public class Hash {
+
+	public static void main(String[] args) {
+		
+		HashSet<Usuario> usuarios = new HashSet<>();
+		
+		usuarios.add(new Usuario("Pedro"));
+		System.out.println(usuarios.hashCode());
+		usuarios.add(new Usuario("Ana"));
+		System.out.println(usuarios.hashCode());
+		usuarios.add(new Usuario("Guilherme"));
+		System.out.println(usuarios.hashCode());
+		
+		boolean resultado = usuarios.contains(new Usuario("Guilherme"));
+		
+		System.out.println(resultado);
+		
+		
+	}
+}

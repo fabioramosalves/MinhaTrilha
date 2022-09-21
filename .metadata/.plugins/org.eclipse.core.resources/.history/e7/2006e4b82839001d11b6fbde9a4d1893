@@ -1,0 +1,10 @@
+package oo.composicao.desafio;
+
+public class Compra {
+
+	Cliente cliente;
+	
+	Compra(Cliente cliente){
+		this.cliente = cliente;
+	}
+}

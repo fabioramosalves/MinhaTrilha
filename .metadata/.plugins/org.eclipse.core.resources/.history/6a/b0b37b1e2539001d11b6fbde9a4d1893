@@ -1,0 +1,13 @@
+package oo.composicao;
+
+public class CursoTeste {
+	public static void main(String[] args) {
+		Aluno aluno1 = new Aluno("João");
+		Aluno aluno2 = new Aluno("João");
+		Aluno aluno3 = new Aluno("João");
+		
+		Curso curso1 = new Curso("Java Completo");
+		Curso curso2 = new Curso("Java Completo");
+		Curso curso3 = new Curso("Java Completo");
+	}
+}

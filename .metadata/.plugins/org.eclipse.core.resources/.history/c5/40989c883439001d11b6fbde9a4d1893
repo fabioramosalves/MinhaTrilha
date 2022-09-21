@@ -1,0 +1,31 @@
+package oo.composicao.desafio;
+
+import java.util.ArrayList;
+
+public class Cliente {
+	
+	String nome;
+	
+	Cliente(String nome){
+		this.nome = nome;
+	}
+
+	ArrayList<Compra> compras = new ArrayList<>();
+	
+	void addCompra(Compra compra){
+		this.compras.add(compra);
+	}
+	
+	double totalCompras() {
+		double total = 0.0;;
+		
+		for (Compra compra : compras) {
+
+			for (Item item : compra.itens) {
+				total += item.produto.preco * item.quantidade;
+			}
+		}
+		
+		return total;
+	}
+}

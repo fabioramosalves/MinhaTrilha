@@ -1,0 +1,35 @@
+package colecoes;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.SortedSet;
+
+public class ConjuntoComportado {
+
+	public static void main(String[] args) {
+		
+		//nao ordenado
+		//Set<String> lista = new HashSet<>(); //operador diamante 
+		
+		// ordenado
+		SortedSet<String> lista = new TreeSet<>(); //operador diamante 
+		
+		lista.add("D");
+		lista.add("A");
+		lista.add("b");
+		lista.add("C");
+		
+		
+		System.out.println(lista.size());
+		System.out.println(lista);
+		
+		System.out.println(lista.remove("A"));
+		
+		System.out.println(lista);
+		
+		for (String string : lista) {
+			System.out.println(string);
+		}
+	}
+}

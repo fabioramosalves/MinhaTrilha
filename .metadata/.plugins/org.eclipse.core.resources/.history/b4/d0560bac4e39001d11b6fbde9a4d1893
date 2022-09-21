@@ -1,0 +1,14 @@
+package oo.heranca;
+
+public class Jogo {
+
+	public static void main(String[] args) {
+
+		Jogador j1 = new Jogador();
+
+		j1.andar(Direcao.Norte);
+		j1.andar(Direcao.Sul);
+		
+		System.out.printf("x -> %d, y -> %d" , j1.x, j1.y);
+	}
+}

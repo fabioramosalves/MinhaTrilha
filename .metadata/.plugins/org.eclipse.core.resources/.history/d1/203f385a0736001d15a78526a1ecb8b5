@@ -1,0 +1,34 @@
+package colecoes;
+
+import java.util.HashSet;
+
+import classe.Data;
+
+public class ConjungoBaguncado {
+
+	public static void main(String[] args) {
+		HashSet conjunto = new HashSet();
+		
+		conjunto.add(1.2); //double -> Double (conversão automática)
+		conjunto.add(true); 
+		conjunto.add("teste");
+		conjunto.add(1);
+		conjunto.add('x');
+		Data data = new Data();
+		conjunto.add(data);
+		
+		conjunto.add("Teste");
+		
+		System.out.println(conjunto);
+		
+		System.out.println("Tamanho do conjunto é " + conjunto.size());
+		
+		System.err.println(conjunto.remove("teste"));
+		System.err.println(conjunto.remove("teste"));//retorna false porque já foi removido!
+		
+		System.err.println(conjunto.remove(data));
+		System.err.println(conjunto.remove(data));//retorna false porque já foi removido!
+		
+		
+	}
+}

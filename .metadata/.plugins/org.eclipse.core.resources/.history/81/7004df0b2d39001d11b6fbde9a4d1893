@@ -1,0 +1,18 @@
+package oo.composicao.desafio;
+
+import java.util.ArrayList;
+
+public class Cliente {
+	
+	String nome;
+	
+	Cliente(String nome){
+		this.nome = nome;
+	}
+
+	ArrayList<Compra> compras = new ArrayList<>();
+	
+	void addCompras(Compra compra){
+		this.compras.add(compra);
+	}
+}

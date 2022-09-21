@@ -1,0 +1,14 @@
+package oo.composicao.desafio;
+
+import java.util.ArrayList;
+
+public class Produto {
+
+	ArrayList<Item> itens = new ArrayList<>();
+	
+	void addItens(Item item) {
+		this.itens.add(item);
+		item.produto = this;
+	}
+	
+}
