@@ -3,19 +3,21 @@ package oo.heranca.desafio;
 public class TesteCarro {
 
 	public static void main(String[] args) {
-		Carro ferrari = new Ferrari();
-		Carro civic = new Civic();
-		Carro carro = new Carro();
+		Carro ferrari = new Ferrari(300);
+		Carro civic = new Civic(180);
+		Carro carro = new Carro(100);
 
-		carro.acelerar();
-		ferrari.acelerar();
-		civic.acelerar();
-		ferrari.frear();
-		carro.frear();
-		carro.frear();
-		
-		System.out.println("Carro " + carro.velocidadeAtual);
-		System.out.println("Ferrari " + ferrari.velocidadeAtual);
-		System.out.println("Civic " + civic.velocidadeAtual);
+		int valor = 40;
+		while (valor > 0) {
+
+			civic.acelerar();
+			ferrari.acelerar();
+			carro.acelerar();
+			valor--;
+
+			System.out.println("Carro " + carro);
+			System.out.println("Ferrari " + ferrari);
+			System.out.println("Civic " + civic);
+		}
 	}
 }
