@@ -2,11 +2,36 @@ package oo.heranca;
 
 public class Jogador {
 
-	int vida = 100;
-	int x;
-	int y;
+	private int vida = 100;
+	private int x;
+	
+	public int getX() {
+		return x;
+	}
 
-	Jogador(int x, int y) {
+	public int getVida() {
+		return vida;
+	}
+
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	private int y;
+
+	protected Jogador(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -31,7 +56,7 @@ public class Jogador {
 		return true;
 	}
 
-	boolean atacar(Jogador oponente) {
+	protected boolean atacar(Jogador oponente) {
 
 		int deltaX = Math.abs(x - oponente.x);
 		int deltaY = Math.abs(y - oponente.y);
@@ -45,5 +70,9 @@ public class Jogador {
 		}
 
 		return true;
+	}
+	
+	public String getCoordenadas() {
+		return String.format("x -> %d, y -> %d \n", x, y);
 	}
 }
