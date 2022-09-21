@@ -23,7 +23,10 @@ public class TesteCarro {
 			valor--;
 
 			System.out.println("Ferrari " + ferrari);
+
 			// System.out.println("Civic " + civic);
 		}
+		
+		System.out.println("Velocidade do ar " + ferrari.velocidadeDoAr());
 	}
 }
