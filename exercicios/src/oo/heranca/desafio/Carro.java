@@ -4,8 +4,8 @@ public class Carro {
 
 	final int VELOCIDADE_MAXIMA;
 	int velocidadeAtual = 0;
-	
-	Carro(int velocidadeMaxima){
+
+	Carro(int velocidadeMaxima) {
 		this.VELOCIDADE_MAXIMA = velocidadeMaxima;
 	}
 
@@ -17,8 +17,8 @@ public class Carro {
 	}
 
 	void acelerar() {
-		if(this.VELOCIDADE_MAXIMA > this.velocidadeAtual)
-		this.velocidadeAtual += 5;
+		if (this.VELOCIDADE_MAXIMA > this.velocidadeAtual)
+			this.velocidadeAtual += 5;
 		else
 			this.velocidadeAtual = this.VELOCIDADE_MAXIMA;
 	}
