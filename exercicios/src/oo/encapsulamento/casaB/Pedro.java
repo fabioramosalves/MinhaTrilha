@@ -7,7 +7,7 @@ public class Pedro extends Ana {
 	void testeAcessos() {
 		//System.out.println(segredo); // privado:
 		//System.out.println(facoDentroDeCasa); // default (pacote)
-		System.out.println(formaDeFalar); //protected: herança não precisa de instancia do objeto
+		System.out.println(formaDeFalar); // protected: herança não precisa de instancia do objeto
 		System.out.println(todosSabem); // public: recebido por herança também não precisa de instancia do objeto
 	}
 }
