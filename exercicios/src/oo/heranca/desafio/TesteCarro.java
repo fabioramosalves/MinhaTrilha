@@ -7,7 +7,6 @@ public class TesteCarro {
 		Carro civic = new Civic(180);
 		Carro carro = new Carro(100);
 
-		
 		int valor = 40;
 		while (valor > 0) {
 
