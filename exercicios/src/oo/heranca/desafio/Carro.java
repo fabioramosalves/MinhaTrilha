@@ -20,7 +20,7 @@ public class Carro {
 
 	public void frear() {
 		if (this.velocidadeAtual > 0)
-			this.velocidadeAtual -= delta;
+			this.velocidadeAtual -= 5;
 		else
 			this.velocidadeAtual = 0;
 	}

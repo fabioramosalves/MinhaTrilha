@@ -10,17 +10,20 @@ public class TesteCarro {
 		Civic civic = new Civic(180);
 
 		int valor = 40;
-		while (valor > 0 && ferrari.acelerar()) {
+		while (valor > 0) {
+
+			if (!ferrari.acelerar())
+				break;
 
 			ferrari.desligarTurbo();
 			civic.acelerar();
-			ferrari.acelerar();
-			//ferrari.ligarTurbo();
-			ferrari.ligarAr();
+
+			ferrari.ligarTurbo();
+			ferrari.desligarAr();
 			valor--;
 
 			System.out.println("Ferrari " + ferrari);
-			//System.out.println("Civic " + civic);
+			// System.out.println("Civic " + civic);
 		}
 	}
 }
