@@ -1,0 +1,10 @@
+package lambdas.intefaceFuncional.desafio;
+import lambdas.intefaceFuncional.Produto;
+public class Desafio {
+
+	public static void main(String[] args) {
+		Produto p = new Produto("iPad",1455.25,0.2);
+		
+		
+	}
+}
