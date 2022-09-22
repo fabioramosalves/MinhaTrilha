@@ -4,7 +4,7 @@ import java.security.SecureRandom;
 
 public final class GeneratePassword {
 	
-	public final static String generateRandomPassword(int len) {
+	public static String generateRandomPassword(int 30) {
 		// intervalo ASCII – alfanumérico (0-9, a-z, A-Z)
 		final String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 

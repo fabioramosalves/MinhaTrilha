@@ -6,7 +6,6 @@ public class Threads {
 
 		Runnable trabalho1 = new Trabalho1();
 
-		//criando uma classe anonima
 		Runnable trabalho2 = new Runnable() {
 
 			public void run() {
