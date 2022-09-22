@@ -1,8 +1,0 @@
-package oo.heranca;
-
-public class Jogo {
-
-	Jogador j1 = new Jogador();
-	
-	Jogador j2 = new Jogador();
-}

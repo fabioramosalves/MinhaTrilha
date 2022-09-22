@@ -1,0 +1,9 @@
+package lambdas;
+
+public class CalculoTeste {
+
+	Calculo soma = new Somar();
+	Calculo multiplicacao = new Multiplicar();
+	Calculo dividir = new Dividir();
+	
+}

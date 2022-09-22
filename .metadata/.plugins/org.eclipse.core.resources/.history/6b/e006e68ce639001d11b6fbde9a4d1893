@@ -1,0 +1,8 @@
+package oo.abstrato;
+
+public class Animal {
+
+	public String respirar() {
+		return "CO2";
+	}
+}

@@ -1,0 +1,13 @@
+package lambdas;
+
+public class CalculoTeste1 {
+
+	public static void main(String[] args) {
+		Calculo soma = new Somar();
+		Calculo subtrair = new Subtrair();
+		Calculo multiplicacao = new Multiplicar();
+		Calculo dividir = new Dividir();
+		
+		System.out.println(soma.executar(1,1));
+	}
+}

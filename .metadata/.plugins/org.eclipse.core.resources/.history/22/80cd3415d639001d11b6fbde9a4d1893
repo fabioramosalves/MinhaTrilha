@@ -1,0 +1,11 @@
+package oo.polimorfismo;
+
+public class Jantar {
+
+	public static void main(String[] args) {
+		
+		Pessoa p1 = new Pessoa(new Arros(.05));
+		
+		
+	}
+}

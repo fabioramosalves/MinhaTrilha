@@ -1,0 +1,5 @@
+package lambdas;
+
+public class Dividir implements Calcular{
+
+}

@@ -1,0 +1,12 @@
+package oo.encapsulamento;
+
+public class PessoaTeste {
+
+	public static void main(String[] args) {
+		Pessoa pessoa = new Pessoa();
+		
+		pessoa.idade = -30;//alterando a variável
+		
+		System.out.println(pessoa.idade);//ler a variável
+	}
+}

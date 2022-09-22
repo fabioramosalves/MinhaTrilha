@@ -1,0 +1,14 @@
+Interfaces funcionais
+
+
+Assinatura
+
+nada -> T Supplier
+
+T -> nada Consumer
+
+T -> T UnaryOperator
+
+T,T -> T BinaryOperator
+
+S -> T Function

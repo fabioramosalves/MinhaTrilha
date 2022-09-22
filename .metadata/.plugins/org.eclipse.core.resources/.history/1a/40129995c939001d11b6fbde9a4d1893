@@ -1,0 +1,33 @@
+package oo.heranca.teste;
+
+import oo.heranca.Heroi;
+import oo.heranca.Monstro;
+
+public class Jogo {
+
+	public static void main(String[] args) {
+
+		Heroi heroi = new Heroi(10,10);
+
+		Monstro mostro = new Monstro();
+		mostro.x = 10;
+		mostro.y = 11;
+
+		System.out.printf("Heroi " + mostro.getCoordenadas());
+		System.out.printf("Monstro x -> %d, y -> %d \n", mostro.x, mostro.y);
+	
+		heroi.atacar(mostro);
+		mostro.atacar(heroi);
+		heroi.atacar(mostro);
+		mostro.atacar(heroi);
+		heroi.atacar(mostro);
+		mostro.atacar(heroi);
+		heroi.atacar(mostro);
+		mostro.atacar(heroi);
+		heroi.atacar(mostro);
+		mostro.atacar(heroi);
+
+		System.out.println("Heroi " + heroi.vida);
+		System.out.println("Monstro " + mostro.vida);
+	}
+}
