@@ -1,14 +1,13 @@
-package streamAPI;
+package streamAPI.desafio;
 
 import java.util.Arrays;
 import java.util.List;
 
 import myClass.Util;
 
-public class DesafioMap {
+public class DesafioMapResposta {
 
 	public static void main(String[] args) {
-
 		List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
 		/*
@@ -18,7 +17,7 @@ public class DesafioMap {
 		 */
 
 		nums.stream()
-			.map(Util.intToBinary)
+			.map(Integer::toBinaryString)
 			.map(Util.revertString)
 			.map(Util.convertBynaryToInt)
 			.forEach(Util.printlnOutInt);
