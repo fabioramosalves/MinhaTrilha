@@ -3,6 +3,8 @@ package streamAPI;
 import java.util.Arrays;
 import java.util.List;
 
+import myClass.Util;
+
 public class DesafioMap {
 
 	public static void main(String[] args) {
@@ -16,9 +18,9 @@ public class DesafioMap {
 		 */
 
 		nums.stream()
-			.map(Utilitarios.intToBinary)
-			.map(Utilitarios.revertString)
-			.map(Utilitarios.convertBynaryToInt)
-			.forEach(Utilitarios.printlnOutInt);
+			.map(Util.intToBinary)
+			.map(Util.revertString)
+			.map(Util.convertBynaryToInt)
+			.forEach(Util.printlnOutInt);
 	}
 }
