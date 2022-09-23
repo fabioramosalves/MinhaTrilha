@@ -1,7 +1,0 @@
-package oo.composicao.desafio;
-
-import oo.composicao.desafio.Compra;
-
-public class Item {
-	Compra compra;
-}

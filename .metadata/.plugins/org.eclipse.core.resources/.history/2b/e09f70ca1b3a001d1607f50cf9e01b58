@@ -1,8 +1,0 @@
-package lambdas.intefaceFuncional;
-
-public class Fornecedor {
-
-	public static void main(String[] args) {
-		
-	}
-}

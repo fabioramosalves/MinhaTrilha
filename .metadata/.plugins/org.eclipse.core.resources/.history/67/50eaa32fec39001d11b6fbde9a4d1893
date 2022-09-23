@@ -1,9 +1,0 @@
-package oo.abstrato;
-
-public class Cachorro extends Mamifero {
-
-	public String mamar() {
-		// TODO Auto-generated method stub
-		return "Usando leite";
-	}
-}

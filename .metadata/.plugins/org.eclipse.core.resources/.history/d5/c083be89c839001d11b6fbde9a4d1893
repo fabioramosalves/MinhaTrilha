@@ -1,8 +1,0 @@
-package oo.heranca;
-
-protected enum Direcao {
-	Norte,
-	Leste,
-	Sul,
-	Oeste;
-}

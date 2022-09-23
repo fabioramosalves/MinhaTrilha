@@ -1,9 +1,0 @@
-package oo.heranca;
-
-public enum Direcao {
-
-	Direita,
-	Esquerda,
-	Cima,
-	Baixo
-}
