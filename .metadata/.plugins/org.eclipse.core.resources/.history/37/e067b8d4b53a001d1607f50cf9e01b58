@@ -1,0 +1,11 @@
+package streamAPI;
+
+import java.util.stream.Stream;
+
+public class Map {
+
+	public static void main(String[] args) {
+		
+		Stream<Integer> map = Stream.of(null)
+	}
+}

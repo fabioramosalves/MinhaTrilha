@@ -1,0 +1,9 @@
+package streamAPI;
+
+public class CriandoStreams {
+
+	public static void main(String[] args) {
+		
+	    Consumer consumer = System.out::print;
+	}
+}

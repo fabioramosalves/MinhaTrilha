@@ -7,3 +7,17 @@
        
        
        buid -> stream -> int -> stream -> int -> stream -> term
+       
+       
+       Ordenadas - tem uma sequencia ordenada.
+       
+       Não ordenadas - não tem uma sequencia a ser respeitada
+       
+       Stream sequencial - processa de dados sequencialmente
+       
+       Paralel Stream - linhas de processamento muito mais rápido executado paralelamente
+       
+       
+       
+       
+       

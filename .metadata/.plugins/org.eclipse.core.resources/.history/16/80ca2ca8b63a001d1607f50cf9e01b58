@@ -1,0 +1,20 @@
+package streamAPI;
+
+import java.util.function.Consumer;
+import java.util.stream.Stream;
+
+public class Map {
+
+	public static void main(String[] args) {
+		
+		Consumer<Integer> print = System.out::println;
+		
+		Stream<Integer> map = Stream.of(10,20,30);
+		
+		
+		var mapMod = map.map(x -> Math.pow(x, 100));	
+		
+		mapMod.map(x -> x * x).forEach(print);
+	 	
+	}
+}

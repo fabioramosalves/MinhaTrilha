@@ -1,0 +1,11 @@
+package streamAPI;
+
+import java.util.Arrays;
+
+public class DesafioMap {
+
+	public static void main(String[] args) {
+		
+		List<Integer> nums = Arrays.asList();
+	}
+}

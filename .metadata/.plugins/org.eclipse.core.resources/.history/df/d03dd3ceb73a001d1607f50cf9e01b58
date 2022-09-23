@@ -1,0 +1,18 @@
+package streamAPI;
+
+import java.util.function.Consumer;
+import java.util.stream.Stream;
+
+public class Map {
+
+	public static void main(String[] args) {
+
+		Consumer<Integer> printInt = System.out::println;
+		Stream<Integer> mapInt = Stream.of(10, 20, 30);
+		mapInt.map(x -> x * x).forEach(print);
+		
+		
+		
+
+	}
+}

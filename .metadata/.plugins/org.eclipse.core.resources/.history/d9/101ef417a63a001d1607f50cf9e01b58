@@ -1,0 +1,16 @@
+       Streams
+
+
+       Build Operation (criar)
+       Intermediary Operation (intermediar)
+       Terminal Operation (finalizar)
+       
+       
+       buid -> stream -> int -> stream -> int -> stream -> term
+       
+       
+       Ordenadas - tem uma sequencia ordenada.
+       
+       Não ordenadas - não tem uma sequencia a ser respeitada
+       
+       
