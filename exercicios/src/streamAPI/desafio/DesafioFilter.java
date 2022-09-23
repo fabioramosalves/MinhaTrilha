@@ -12,7 +12,7 @@ public class DesafioFilter {
 	public static void main(String[] args) {
 
 		List<Produto> produtos = new ArrayList<>();
-
+		
 		produtos.add(new Produto("Carne", 45.09, ProdutoTipo.Alimentacao, true, 0.0, 0.3));
 		produtos.add(new Produto("Camisa", 45.80, ProdutoTipo.Vestuario, false, 100.0, 0.35));
 		produtos.add(new Produto("Fogão", 1588.99, ProdutoTipo.Eletrodomestico, true, 100.0, 0.0));
