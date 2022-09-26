@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Aluno {
 
-	final String nome;
-	final double nota;
-
-	Aluno(String nome, double nota) {
+	public String nome;
+	public double nota;
+	
+	public Aluno(String nome, double nota) {
 		this.nome = nome;
 		this.nota = nota;
 	}
@@ -19,7 +19,7 @@ public class Aluno {
 	public double getNota() {
 		return nota;
 	}
-	
+
 	public String toString() {
 		return this.nome + " -> " + this.nota;
 	}
