@@ -7,7 +7,6 @@ import javax.swing.JOptionPane;
 public class DesafioCalculadora {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		// Ler num1
 		// Ler num2

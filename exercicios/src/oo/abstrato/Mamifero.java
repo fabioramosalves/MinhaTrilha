@@ -6,7 +6,6 @@ public abstract class Mamifero extends Animal {
 
 	// metodo final não pode ser sobrescrito na subclasse
 	public final String mover() {
-		// TODO Auto-generated method stub
 		return "Saindo do lugar";
 	}
 }
