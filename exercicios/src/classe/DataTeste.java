@@ -1,7 +1,5 @@
 package classe;
 
-import java.lang.Character.UnicodeBlock;
-
 public class DataTeste {
 	
 	char teste;
