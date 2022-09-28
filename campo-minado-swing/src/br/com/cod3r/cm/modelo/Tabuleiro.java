@@ -36,15 +36,6 @@ public class Tabuleiro implements CampoObservador {
 		campos.forEach(funcao);
 	}
 
-	public Campo getCampo(int i) {
-		return this.campos.get(i);
-	}
-
-	// testar com foreche
-	public List<Campo> getCampos() {
-		return this.campos;
-	}
-
 	public void registrarObservador(Consumer<ResultadoEvento> observador) {
 		observadores.add(observador);
 	}
@@ -56,15 +47,10 @@ public class Tabuleiro implements CampoObservador {
 	public void eventoOcorreu(Campo c, CampoEvento e) {
 
 		if (e == CampoEvento.EXPLODIR) {
-
 			mostrarMinas();
 			notificarObservadores(false);
-			System.out.println("Perdeu... :(");
-
 		} else if (objetivoAlcancado()) {
-
 			notificarObservadores(true);
-			System.out.println("Voce ganhou... :)");
 		}
 	}
 
@@ -118,7 +104,6 @@ public class Tabuleiro implements CampoObservador {
 	}
 
 	private void mostrarMinas() {
-		campos.stream().filter(c -> c.isMinado()).forEach(c -> c.setAberto(true));
+		campos.stream().filter(c -> c.isMinado() && !c.isMarcado()).forEach(c -> c.setAberto(true));
 	}
-
 }
