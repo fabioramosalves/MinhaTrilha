@@ -11,12 +11,26 @@ public class Campo {
 	private boolean aberto = false;
 	private boolean minado = false;
 	private boolean marcado = false;
-
+	
+	
+    private List<CampoObservador> observadores = new ArrayList<>();
+    //private List<BiConsumer<Campo, CampoEvento>> observadores2 = new ArrayList<>();
+    
+    
 	private List<Campo> vizinhos = new ArrayList<>();
 
 	Campo(int linha, int coluna) {
 		this.linha = linha;
 		this.coluna = coluna;
+	}
+	
+	public void registrarObservador(CampoObservador observador) {
+		observadores.add(observador);
+	}
+	
+	private void notificarObservadores(CampoEvento evento) {
+		observadores.stream()
+			.forEach(o -> o.eventoOcorreu(this, evento));
 	}
 
 	boolean adicionarVizinho(Campo vizinho) {
@@ -44,18 +58,29 @@ public class Campo {
 	void alternarMarcacao() {
 		if (!aberto) {
 			marcado = !marcado;
+			
+			if(marcado) {
+				notificarObservadores(CampoEvento.MARCAR);
+			}
+			else {
+				notificarObservadores(CampoEvento.DESMARCAR);
+			}
+				
 		}
 	}
 
 	boolean abrir() {
 		if (!aberto && !marcado) {
-			aberto = true;
-
+			
+			
 			if (minado) {
-				// TODO	 Implementar no versão
-				// FIXME Erro
+				notificarObservadores(CampoEvento.EXPLODIR);
+				return true;
 			}
 
+			setAberto(true);
+			notificarObservadores(CampoEvento.ABRIR);
+			
 			if (vizinhacaSegura()) {
 				vizinhos.forEach(v -> v.abrir());
 			}
@@ -81,6 +106,10 @@ public class Campo {
 	
 	void setAberto(boolean aberto) {
 		this.aberto = aberto;
+		
+		if(aberto) {
+			notificarObservadores(CampoEvento.ABRIR);
+		}
 	}
 
 	public boolean isAberto() {
