@@ -1,4 +1,4 @@
-package br.com.cod3r.cm.modelo;
+package br.com.cod3r.cm;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import br.com.cod3r.cm.excecao.ExplosaoException;
+import br.com.cod3r.cm.modelo.Campo;
+
 
 public class CampoTeste {
 
