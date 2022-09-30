@@ -9,7 +9,7 @@ public class TelaPrincipal extends JFrame {
 
 	TelaPrincipal() {
 
-		Tabuleiro tabuleiro = new Tabuleiro(15, 15, 4);
+		Tabuleiro tabuleiro = new Tabuleiro(15, 15, 1);
 
 		setTitle("Campo Minado");
 		setSize(600, 600);

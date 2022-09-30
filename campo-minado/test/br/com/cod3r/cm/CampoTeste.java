@@ -152,7 +152,8 @@ public class CampoTeste {
 		campo12.minar();
 
 		Campo campo22 = new Campo(2, 2);
-		campo22.adicionarVizinho(campo11);
+		
+		campo12.adicionarVizinho(campo11);
 		campo22.adicionarVizinho(campo12);
 
 		campo.adicionarVizinho(campo22);

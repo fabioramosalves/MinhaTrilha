@@ -7,17 +7,27 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-@SuppressWarnings("serial")
-public class Display extends JPanel {
+import br.com.cod3er.modelo.Memoria;
+import br.com.cod3er.modelo.MemoriaObservador;
 
-	private final JLabel label; 
+@SuppressWarnings("serial")
+public class Display extends JPanel implements MemoriaObservador {
+
+	private final JLabel label;
+
 	public Display() {
-		setBackground(new Color(46,49,50));
-		label = new JLabel("123.123");
+		Memoria.getInstancia().adicinarObservador(this);
+		setBackground(new Color(46, 49, 50));
+		label = new JLabel(Memoria.getInstancia().getTextoAtual());
 		label.setForeground(Color.WHITE);
-		label.setFont(new Font("courier",Font.PLAIN,33));
+		label.setFont(new Font("courier", Font.PLAIN, 33));
 		
-		setLayout(new FlowLayout(FlowLayout.RIGHT, 15,15));
+		setLayout(new FlowLayout(FlowLayout.RIGHT, 15, 15));
 		add(label);
+	}
+
+	@Override
+	public void valorAlterado(String novoValor) {
+		label.setText(novoValor);
 	}
 }

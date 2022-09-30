@@ -26,6 +26,6 @@ public class Relogio {
 		
 		while (!despertar.deveDespertar()) {}
 		
-		observadores.stream().forEach(o -> o.despertar(new EventoDespertar(true)));
+		observadores.forEach(o -> o.despertar(new EventoDespertar(true)));
 	}
 }
