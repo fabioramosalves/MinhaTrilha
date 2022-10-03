@@ -10,3 +10,5 @@ create table estados (
     unique key (nome),
     unique key (sigla)
 );
+
+
