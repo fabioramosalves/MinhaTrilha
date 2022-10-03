@@ -14,3 +14,5 @@ values
 
 select sigla, nome, populacao from  estados where populacao >= 10
 order by populacao desc
+
+
