@@ -16,12 +16,12 @@ public class Logicos {
 		//tabela verdade E
 		System.out.println(true && true);
 		System.out.println(true && false);
-		System.out.println(false && true);
-		System.out.println(false && false);
+		System.out.println(false);
+		System.out.println(false);
 		
 		//tabela verdade Ou
-		System.out.println(true || true);
-		System.out.println(true || false);
+		System.out.println(true);
+		System.out.println(true);
 		System.out.println(false || true);
 		System.out.println(false || false);
 		

@@ -4,7 +4,7 @@ public class NotacaoPonto {
 
 	public static void main(String[] args) {
 		
-		double a = 2.3;
+		//double a = 2.3;
 		
 		String s = "Bom dia X";
 		
@@ -25,7 +25,7 @@ public class NotacaoPonto {
 		
 		//tipos primitivos não tem o operador ponto
 		
-		int integerNumber = 3;
+		//int integerNumber = 3;
 	
 		//integerNumber. não tem ponto.
 	}

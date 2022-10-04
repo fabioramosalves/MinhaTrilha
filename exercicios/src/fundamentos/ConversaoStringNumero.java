@@ -1,7 +1,5 @@
 package fundamentos;
 
-import java.math.BigDecimal;
-
 import javax.swing.JOptionPane;
 
 public class ConversaoStringNumero {

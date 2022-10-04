@@ -5,7 +5,6 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 import br.com.cod3r.cm.modelo.Campo;
