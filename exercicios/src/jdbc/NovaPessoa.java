@@ -25,7 +25,7 @@ public class NovaPessoa {
                     INSERT INTO pessoas (nome,cpf) VALUES ( ? , ?);
                 """;
 
-        //prepareStatement é usado para evitar sql injection
+        // prepareStatement é usado para evitar sql injection
         PreparedStatement stmt = conexao.prepareStatement(sql);
         stmt.setString(1, nome);
         stmt.setString(2, cpf);
