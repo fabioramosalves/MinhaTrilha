@@ -19,7 +19,6 @@ public class PessoaRepository {
     private final String GET_PESSOA_BY_NAME_SQL = "SELECT * FROM pessoas WHERE nome LIKE ?";
     private final String DELETE_PESSOA_SQL = "DELETE FROM pessoas WHERE codigo = ?";
 
-    
     public List<Pessoa> getPessoas() {
 
         List<Pessoa> pessoas = new ArrayList<>();
