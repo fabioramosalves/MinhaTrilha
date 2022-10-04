@@ -11,6 +11,15 @@ public class Pessoa {
         this.nome = nome;
         this.cpf = cpf;
     }
+    
+    public Pessoa(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+    
+    public Pessoa(int codigo) {
+        this.codigo = codigo;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -34,6 +43,10 @@ public class Pessoa {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+    
+    public String toString() {
+        return String.format("Código: %s Nome: %s CPF: %S \n",  this.getCodigo(), this.getNome(),this.getCpf());
     }
 
 }
