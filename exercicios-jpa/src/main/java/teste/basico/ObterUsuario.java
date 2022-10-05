@@ -15,7 +15,8 @@ public class ObterUsuario {
 
 		Usuario usuario = em.find(Usuario.class, 1L);
 
-		System.out.println(usuario.getNome());
+		if (usuario != null)
+			System.out.println(usuario.getNome());
 
 		emf.close();
 		em.close();
