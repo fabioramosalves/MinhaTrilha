@@ -17,6 +17,11 @@ public class Pessoa {
         this.cpf = cpf;
     }
     
+    public Pessoa(int codigo, String nome) {
+        this.codigo = codigo;
+        this.nome = nome;
+    }
+    
     public Pessoa(int codigo) {
         this.codigo = codigo;
     }

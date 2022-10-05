@@ -15,7 +15,7 @@ public class PessoaRepository {
     private final String INSERT_PESSOA_SQL = "INSERT INTO pessoas (nome,cpf) VALUES (? , ?);";
     private final String UPDATE_PESSOA_SQL = "UPDATE pessoas SET nome = ?, cpf = ? WHERE codigo = ?";;
     private final String GET_PESSOAS_SQL = "SELECT * FROM pessoas;";
-    private final String GET_PESSOA_BY_ID_SQL  = "SELECT * FROM pessoas WHERE codigo = ?";
+    private final String GET_PESSOA_BY_ID_SQL = "SELECT * FROM pessoas WHERE codigo = ?";
     private final String GET_PESSOA_BY_NAME_SQL = "SELECT * FROM pessoas WHERE nome LIKE ?";
     private final String DELETE_PESSOA_SQL = "DELETE FROM pessoas WHERE codigo = ?";
 
@@ -74,11 +74,10 @@ public class PessoaRepository {
             closeConnection(connection, stmt);
         }
 
-        return pessoas.stream().findFirst().isPresent() ?
-                pessoas.stream().findFirst().get(): null;
+        return pessoas.stream().findFirst().isPresent() ? pessoas.stream().findFirst().get() : null;
     }
 
-    public  List<Pessoa>  getPessoaByName(String name) {
+    public List<Pessoa> getPessoaByName(String name) {
 
         List<Pessoa> pessoas = new ArrayList<>();
         PreparedStatement stmt = null;
@@ -122,8 +121,8 @@ public class PessoaRepository {
             success = !stmt.execute();
 
         } catch (SQLException e) {
-           throw new RuntimeException(e);
-        }finally {
+            throw new RuntimeException(e);
+        } finally {
             closeConnection(connection, stmt);
         }
         return success;
@@ -143,8 +142,8 @@ public class PessoaRepository {
             success = !stmt.execute();
 
         } catch (SQLException e) {
-           throw new RuntimeException(e);
-        }finally {
+            throw new RuntimeException(e);
+        } finally {
             closeConnection(connection, stmt);
         }
         return success;
@@ -163,8 +162,8 @@ public class PessoaRepository {
             success = !stmt.execute();
 
         } catch (SQLException e) {
-           throw new RuntimeException(e);
-        }finally {
+            throw new RuntimeException(e);
+        } finally {
             closeConnection(connection, stmt);
         }
         return success;
@@ -174,13 +173,15 @@ public class PessoaRepository {
         try {
             connection.close();
             stmt.close();
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
     }
 
     private void closeConnection(Connection connection, PreparedStatement stmt) {
         try {
             connection.close();
             stmt.close();
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
     }
 }
