@@ -35,14 +35,14 @@ public class AlterarNomePessoa {
             entrada.nextLine();
             System.out.println("Informe o novo nome: ");
             String novoNome = entrada.nextLine();
-           
+
             stmt.close();
 
             stmt = conexao.prepareStatement(update);
 
             stmt.setString(1, novoNome);
             stmt.setInt(2, codigo);
-            
+
             stmt.execute();
 
             stmt.close();

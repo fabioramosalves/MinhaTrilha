@@ -1,20 +1,33 @@
 package jdbc.desafio;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
+
+import jdbc.FabricaConexao;
 
 public class DataBaseConnection {
 
     public static Connection getConnection() {
         try {
-            final String url = "jdbc:mysql://localhost:3306/curso_java?verifyServerCertificate=false&useSSL=true";
-            final String user = "root";
-            final String password = "decolar2022";
+            Properties prop = getProperties();
+            final String url = prop.getProperty("banco.url");
+            final String user = prop.getProperty("banco.user");
+            final String password = prop.getProperty("banco.password");
 
             return DriverManager.getConnection(url, user, password);
-        } catch (SQLException e) {
+        } catch (SQLException | IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    
+    private static Properties getProperties() throws IOException {
+        Properties prop = new Properties();
+        String camminho = "/connections.properties";
+        prop.load(FabricaConexao.class.getResourceAsStream(camminho));
+        
+        return prop;
     }
 }

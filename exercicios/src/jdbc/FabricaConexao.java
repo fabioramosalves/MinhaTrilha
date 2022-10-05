@@ -1,20 +1,33 @@
 package jdbc;
 
+
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 public class FabricaConexao {
 
     public static Connection getConexao() {
         try {
-            final String url = "jdbc:mysql://localhost:3306/curso_java?verifyServerCertificate=false&useSSL=true";
-            final String usuario = "root";
-            final String senha = "decolar2022";
+            
+            Properties prop = getProperties();
+            final String url = prop.getProperty("banco.url");
+            final String usuario = prop.getProperty("banco.user");
+            final String senha = prop.getProperty("banco.password");
 
             return DriverManager.getConnection(url, usuario, senha);
-        } catch (SQLException e) {
+        } catch (SQLException | IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    
+    private static Properties getProperties() throws IOException {
+        Properties prop = new Properties();
+        String camminho = "/connections.properties";
+        prop.load(FabricaConexao.class.getResourceAsStream(camminho));
+        
+        return prop;
     }
 }
