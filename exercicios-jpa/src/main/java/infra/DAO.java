@@ -64,6 +64,10 @@ public class DAO<E extends Entidade> {
 		return this;
 	}
 
+	public E getById(Object id) {	
+		return em.find(_class, id);
+	}
+	
 	public List<E> getAll() {
 		return this.getAll(10, 0);
 	}

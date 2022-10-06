@@ -9,7 +9,7 @@ public class NovoClienteAssento1 {
 
 	public static void main(String[] args) {
 		
-		DAO<Entidade> clienteDAO = new DAO<Entidade>();
+		DAO<Entidade> clienteDAO = new DAO<>();
 		
 		Assento assento = new Assento("ABF4");
 		Cliente cliente = new Cliente("Fabio",assento );
