@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Entity
 //@Table(name = "produtos", schema="curso_java") é possivel setar o nome do schema
 @Table(name = "produtos")
-public class Produto implements Entidade {
+public class Produto {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -9,7 +9,8 @@ import javax.persistence.TypedQuery;
 
 import modelo.basico.Entidade;
 
-public class DAO<E> {
+//DAO extend Entidade para marcar as entidades que poderão usar a fabrica
+public class DAOEntidade<E extends Entidade> {
 
 	private static EntityManagerFactory emf;
 	private EntityManager em;
@@ -24,49 +25,49 @@ public class DAO<E> {
 		}
 	}
 
-	public DAO() {
-		this(null);
-	}
+	public DAOEntidade() {
+			this(null);
+		}
 
-	public DAO(Class<E> _class) {
-		this._class = _class;
-		em = emf.createEntityManager();
-	}
+	public DAOEntidade(Class<E> _class) {
+			this._class = _class;
+			em = emf.createEntityManager();
+		}
 
-	public DAO<E> beginTransaction() {
+	public DAOEntidade<E> beginTransaction() {
 		em.getTransaction().begin();
 		return this;
 	}
 
-	public DAO<E> commitTransaction() {
+	public DAOEntidade<E> commitTransaction() {
 		em.getTransaction().commit();
 		return this;
 	}
 
-	public DAO<E> add(E entity) {
+	public DAOEntidade<E> add(E entity) {
 		em.persist(entity);
 		return this;
 	}
 
-	public DAO<E> addAtomic(E entity) {
+	public DAOEntidade<E> addAtomic(E entity) {
 		this.beginTransaction().add(entity).commitTransaction();
 		return this;
 	}
 
-	public DAO<E> remove(E entity) {
+	public DAOEntidade<E> remove(E entity) {
 		em.remove(entity);
 		return this;
 	}
 
-	public DAO<E> update(E entity) {
+	public DAOEntidade<E> update(E entity) {
 		em.merge(entity);
 		return this;
 	}
 
-	public E getById(Object id) {	
+	public E getById(Object id) {
 		return em.find(_class, id);
 	}
-	
+
 	public List<E> getAll() {
 		return this.getAll(10, 0);
 	}

@@ -13,7 +13,7 @@ import modelo.basico.Entidade;
 
 @Entity
 @Table(name = "clientes")
-public class Cliente implements Entidade{
+public class Cliente {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY )

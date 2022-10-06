@@ -11,7 +11,7 @@ import modelo.basico.Entidade;
 
 @Entity
 @Table(name = "assentos")
-public class Assento implements Entidade{
+public class Assento{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
