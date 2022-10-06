@@ -71,7 +71,7 @@ public class DAO<E extends Entidade> {
 	public List<E> getAll(int limit, int offSet) {
 
 		if (_class == null) {
-			throw new UnsupportedOperationException("Classe nuna");
+			throw new UnsupportedOperationException("Classe nula");
 		}
 
 		String jpql = "select e from " + _class.getName() + " e";

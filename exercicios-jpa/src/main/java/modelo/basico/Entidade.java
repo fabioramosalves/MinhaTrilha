@@ -1,5 +1,5 @@
 package modelo.basico;
 
-public interface Entidade {
+public interface Entidade{
 
 }
