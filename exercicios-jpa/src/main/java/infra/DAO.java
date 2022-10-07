@@ -95,6 +95,13 @@ public class DAO<E> {
 		
 		return query.getResultList();
 	}
+	
+	public E queryOne(String nameConsulta, Object... params){
+
+		List<E> list = query(nameConsulta, params);
+		
+		return list.isEmpty() ? null : list.get(0) ;
+	} 
 
 	public void close() {
 		em.close();
