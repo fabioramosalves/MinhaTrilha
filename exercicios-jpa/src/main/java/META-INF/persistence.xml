@@ -24,6 +24,8 @@
 		<class>desafio.heranca.jpa.Pessoa</class>
 		<class>desafio.heranca.jpa.PessoaFisica</class>
 		<class>desafio.heranca.jpa.PessoaJuridica</class>
+		<class>modelo.heranca.Aluno</class>
+		<class>modelo.heranca.AlunoBolsista</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver"

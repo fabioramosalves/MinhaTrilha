@@ -1,8 +1,5 @@
-package desafio.heranca.jpa;
+package modelo.heranca;
 
-import java.io.Serializable;
-
-import javax.persistence.Column;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.DiscriminatorValue;
@@ -14,33 +11,32 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
 @Entity
+// SINGLE_TABLE é a estratégia padrão caso não informe
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "tipo",length = 1, discriminatorType = DiscriminatorType.STRING )
-@DiscriminatorValue("P")
-public class Pessoa implements Serializable{
-
-	private static final long serialVersionUID = 1L;
+@DiscriminatorColumn(name = "tipo", length = 2, discriminatorType = DiscriminatorType.STRING )
+@DiscriminatorValue("AL")
+public class Aluno {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long matricula;
+
 	private String nome;
-	
-	@Column(insertable = false, updatable = false)
-	private String tipo;
-	
-	public Pessoa() {}
-	
-	public Pessoa(String nome) {
+
+	public Aluno() {
+	}
+
+	public Aluno(Long matricula, String nome) {
+		this.matricula = matricula;
 		this.nome = nome;
 	}
 
-	public Long getId() {
-		return id;
+	public Long getMatricula() {
+		return matricula;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setMatricula(Long matricula) {
+		this.matricula = matricula;
 	}
 
 	public String getNome() {
@@ -49,13 +45,5 @@ public class Pessoa implements Serializable{
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
 	}
 }
