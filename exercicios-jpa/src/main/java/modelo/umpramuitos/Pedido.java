@@ -23,8 +23,8 @@ public class Pedido {
 	@Column(nullable = false)
 	private Date date;
 	
-	//Por padrão o Fetch é do tipo LAZY
-	//Para que traga os itens de maneira antecipada é necessário setar para EAGER
+	//Por padrão o Fetch é do tipo (LAZY)
+	//Para que traga os itens de maneira antecipada é necessário setar para (EAGER)
 	@OneToMany(mappedBy = "pedido", fetch = FetchType.EAGER) 
 	private List<ItemPedido> itens;
 

@@ -63,10 +63,10 @@ public class DAO<E> {
 		return this;
 	}
 
-	public E getById(Object id) {	
+	public E getById(Object id) {
 		return em.find(_class, id);
 	}
-	
+
 	public List<E> getAll() {
 		return this.getAll(10, 0);
 	}
@@ -84,6 +84,16 @@ public class DAO<E> {
 
 		List<E> result = query.getResultList();
 		return result;
+	}
+
+	public List<E> query(String nameConsulta, Object... params){
+		TypedQuery<E> query = em.createNamedQuery(nameConsulta, _class);
+		
+		for(int i = 0 ;i < params.length; i += 2) {
+			query.setParameter(params[i].toString(), params[i + 1]);
+		}
+		
+		return query.getResultList();
 	}
 
 	public void close() {
